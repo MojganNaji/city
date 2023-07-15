@@ -1,115 +1,228 @@
 
-.menu {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .menu > * {
-    flex: 1 1 100px;
-    height: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    font-size: 14px;
-  }
-  
 
-  .boxabi {
-    width: 100%;
-    height: 300px;
-    background-color: aqua;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.menu {
+  height: 40px;
+  min-height: 40px;
+  background-color: whitesmoke;
+  display: flex;
+}
+
+.bestcityguides {
+  height: 40px;
+  width: 50%;
+  color: rgb(30, 60, 94);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  margin-left: 100px;
+}
+
+.bottoms {
+  color: rgb(58, 206, 194);
+  font-size: 12px;
+  height: 40px;
+  width: 50%;
+  height: 100%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 100px;
+}
+
+.bottoms > div {
+  margin-right: 15px;
+}
+
+.bottoms > div:hover {
+  color: rgb(58, 206, 194);
+  font-size: 12px;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+.header {
+  height: 230px;
+  min-height: 230px;
+  background-color: rgb(58, 206, 194);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tower-image {
+  width: 100px;
+}
+
+h1 {
+  color: azure;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.lower-image-text {
+  color: azure;
+  font-size: 15px;
+}
+
+.body {
+  width: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+
+.text-box {
+  display: inline-block;
+  width: calc(100% / 7);
+  margin: 20px;
+}
+
+h2 {
+  color: rgb(30, 60, 94);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.body-text {
+  color: rgb(99, 104, 108);
+  font-size: 12px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+
+.great-food {
+  display: inline-block;
+  width: calc(100% / 6);
+  margin: 20px;
+}
+
+.image-box {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pastry {
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+.image-text {
+  background-color: rgba(18, 42, 104, 0.7);
+  width: 100%;
+  height: 50%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+h3 {
+  font-size: 10px;
+  color: whitesmoke;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.box-text {
+  font-size: 9px;
+  color: whitesmoke;
+  padding: 5px;
+  text-align: left;
+}
+
+.footer {
+  height: 50px;
+  min-height: 50px;
+  background-color: rgb(217, 228, 234);
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 680px) {
+  .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    flex-direction: column;
+    height: 100%;
   }
-  
-  .boxzir {
+  .menu {
+    height: 100px;
+    min-height: 100px;
     width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .boxzir > * {
-    flex: 1 1 100%;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  
-  .box6, .box7, .box8 {
-    width: 100%;
-    height: auto;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
   }
-  
-  @media screen and (min-width: 600px) {
-    .boxzir > * {
-      flex: 1 1 calc(100% / 3);
-    }
-  
-    .box6, .box7, .box8 {
-      margin: 0 15px;
-    }
-  }
-  
-  .image1 {
-    max-width: 100%;
-    height: auto;
-    border-radius: 100px;
-    margin-bottom: 30px;
-  }
-  
-  .image2 {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 30px;
-  }
-  
 
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-  }
-  
-  @media screen and (min-width: 600px) {
-    body {
-      font-size: 18px;
-    }
-  }
-  
-  
-  .footer {
-    text-align: center;
-    background-color: rgba(201, 201, 201, 0.584);
-    margin-top: 25px;
-    width: 100%;
-    height: 30px;
-    border: 3px solid white;
+  .left-menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
+    margin: 20px 0 0 0;
   }
-  
-  .last {
-    color: white;
+
+  .right-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
   }
+
+  .body {
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .text-box {
+    display: block;
+    width: 80%;
+    margin: 15px;
+  }
+
+  .great-food {
+    width: 80%;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-box {
+    position: relative;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+}
